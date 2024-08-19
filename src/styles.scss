@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    // border: 1px solid red;
+}
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// COLORS
+    $primary: #161513;
+    $white: #fff;
+
+// GLOBAL
+body {
+    height: 100vh;
+    background-color: $primary;
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+}
+// VARIABLES
+@mixin dFlex ($direction, $justify, $align){
+    display: flex;
+    direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

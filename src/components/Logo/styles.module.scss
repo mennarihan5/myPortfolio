@@ -1,0 +1,27 @@
+@import '../../styles.scss';
+
+.logo-wrapper {
+    width: 8rem;
+    position: relative;
+    &::after {
+        content: '';
+        top: 90%;
+        left: 50%;
+        position: absolute;
+        width: 4.5rem;
+        height: 0.2rem;
+        border-radius: 3rem;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: center;
+        transition: all 0.8s ease-in-out;
+        background-image: linear-gradient(
+            to right top, #c5009e, #ca29ab, #cf3eb8, #d44fc5, #d95fd2, #c27be9, #a992f8, #94a5ff, #5ec0ff, #10d7ff, #0febff, #5ffbf1);
+    }
+    &:hover::after {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+.logo-wrapper img {
+    width: 100%;
+    cursor: pointer;
+}

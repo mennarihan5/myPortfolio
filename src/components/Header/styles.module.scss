@@ -1,0 +1,7 @@
+@import '../../styles.scss';
+
+.header-container {
+    @include dFlex(row, space-between, center);
+    width: 80%;
+    margin: 2% auto;
+}

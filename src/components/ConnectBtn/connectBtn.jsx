@@ -1,9 +1,11 @@
 import styles from './styles.module.scss';
 
-const ConnectBtn = () => {
+const ConnectBtn = (props) => {
+  const {children, className} = props;
+
   return (
-    <button className={styles['connect-btn']}>
-        Connect with me!
+    <button className={`${styles['connect-btn']} ${className}`}>
+        {children}
     </button>
   )
 }

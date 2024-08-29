@@ -13,7 +13,9 @@ const Header = () => {
           <Navbar />
         </div>
         <div className={styles['connect-btn-wrapper']}>
-          <ConnectBtn />
+          <ConnectBtn>
+            Connect Now! 
+          </ConnectBtn>  
         </div>
     </div>
   )

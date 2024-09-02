@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import '../../styles/styles.scss';
 
 .connect-btn {
     width: 13rem;
@@ -7,11 +7,14 @@
     border-radius: 3rem;
     padding: 4% 1%;
     border: none;
-    background-image: linear-gradient(to right top, #c5009e, #ca29ab, #cf3eb8, #d44fc5, #d95fd2, #c27be9, #a992f8, #94a5ff, #5ec0ff, #10d7ff, #0febff, #5ffbf1);
-    color: $white;
-    transition: transform 0.5s ease-in-out;
+    font-weight: 600;
+    color: $primary;
+    background-image: linear-gradient(to right top, #ac4efa, #c267f9, #d47ff9, #e398f9, #f0b1fb, #f7b3f2, #fcb6ea, #ffbae3, #ffa9c5, #ff9e95, #ffa15b, #feb000);
+    // color: $white;
+    transition: all 0.5s ease-in-out;
     font-family: "Montserrat", sans-serif;
     &:hover {
         transform: scale(1.05);
+        border: 2px solid $pink;
     }
-}
+} 

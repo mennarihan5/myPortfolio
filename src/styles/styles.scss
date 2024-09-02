@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     // border: 1px solid red;
 }
 // FONTS
@@ -9,6 +10,8 @@
 // COLORS
     $primary: #161513;
     $white: #fff;
+    $pink: #e398f9;
+    $pink2: #d085ee;
 
 // GLOBAL
 body {

@@ -1,0 +1,34 @@
+@import '../../styles/styles.scss';
+
+.services-container {
+    margin: 10% auto;
+    width: 80%;
+}
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5%;
+}
+.services-wrapper {
+    @include dFlex (row, space-between, center)
+
+}
+.service {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 2px solid $white;
+    color: $pink2;
+    border-radius: 8px;
+    width: 20rem;
+    height: 15rem;
+    text-align: center;
+    @include dFlex (row, center, center);
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    &:hover {
+        color: $white;
+        border: 2px solid $pink2;
+        background-image: linear-gradient(45deg, #39143c, #4e3702);
+        transform: scale(1.05);
+    }
+}

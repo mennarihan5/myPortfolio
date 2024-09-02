@@ -1,0 +1,62 @@
+@import '../../styles/styles.scss';
+
+.hero-container {
+    @include dFlex (row, space-between, center);
+    margin: 7% auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.left-side, .right-side {
+    flex-grow: 1; 
+}
+.left-side {
+    width: 40rem;
+}
+.name {
+    background: linear-gradient(to right top, #ac4efa, #c267f9, #d47ff9, #e398f9, #f0b1fb, #f7b3f2, #fcb6ea, #ffbae3, #ffa9c5, #ff9e95, #ffa15b, #feb000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+}
+.subtitle {
+    font-size: 1.25rem;
+    letter-spacing: 0.3px;
+    line-height: 2rem;
+    margin-bottom: 3%;
+}
+.right-side {
+    width: 20rem;
+}
+.img-wrapper {
+    margin-top: -4%;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+    p {
+        text-align: center;
+        margin-top: -17%;
+        margin-left: 10%;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+    }
+
+}
+
+.btns-wrapper {
+   display: flex;
+   align-items: center;
+}
+.connect-btn, .resume-btn {
+    padding: 1.5% 1%;
+    margin-right: 5%;
+    margin-top: 2%;
+    transition: all 0,5s ease-in-out;
+}
+.connect-btn:hover {
+    border: 2px solid $white;
+}

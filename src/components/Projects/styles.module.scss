@@ -1,0 +1,23 @@
+@import '../../styles/styles.scss';
+
+.projects-container {
+    width: 80%;
+    margin: auto;
+}
+.title {
+
+}
+.projects-wrapper {
+    @include dFlex (row, space-between, center);
+    flex-wrap: wrap;
+}
+.project {
+    width: 30%;
+    cursor: pointer;
+    img {
+        width: 100%;
+    }
+    p {
+
+    }
+}

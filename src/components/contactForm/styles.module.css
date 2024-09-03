@@ -12,11 +12,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.contact-container {
-  display: flex;
-  direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: 5% auto;
+.form {
+  width: 50%;
 }/*# sourceMappingURL=styles.module.css.map */

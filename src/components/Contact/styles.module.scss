@@ -1,1 +1,31 @@
 @import '../../styles/styles.scss';
+
+.contact-container {
+    @include dFlex (row, space-between, center);
+    width: 80%;
+    margin: 5% auto;
+}
+.title {
+
+}
+.contact-info {
+
+}
+.contact-title {
+
+}
+.contact-text {
+
+}
+.contact-data {
+
+    .icon {
+
+    }
+    .data {
+
+    }
+}
+.contact-form {
+
+}

@@ -10,11 +10,10 @@ const Projects = () => {
                 projectsData.map((project) => (
                     <div className={styles.project} key={project.id}>
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <img src={project.img} alt={project.desc} />
-                            <p>{project.desc}</p>
+                            <img src={project.img} alt='project' />
                         </a>
                     </div>
-                ) )
+                ))
             }
         </div>
     </div>

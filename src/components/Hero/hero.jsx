@@ -23,7 +23,7 @@ const Hero = () => {
                 </ConnectBtn>
               </Link> 
               <ConnectBtn className={styles['resume-btn']}>
-                <a href="../../../public/Resume-Menna-Rihan.pdf" target="_blank" rel="noopener noreferrer" className={styles['resume-btn']}>
+                <a href="/files/Resume-Menna-Rihan.pdf" target="_blank" rel="noopener noreferrer" className={styles['resume-btn']}>
                   My Resume
                 </a>
               </ConnectBtn>

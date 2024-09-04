@@ -2,7 +2,9 @@
 
 .hero-container {
     @include dFlex (row, space-between, center);
-    margin: 7% auto;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 3%;
     width: 80%;
     flex-wrap: wrap;
 }
@@ -50,12 +52,17 @@
 .btns-wrapper {
    display: flex;
    align-items: center;
+   gap: 5%;
+   margin-top: 5%;
 }
 .connect-btn, .resume-btn {
-    padding: 1.5% 1%;
-    margin-right: 5%;
-    margin-top: 2%;
-    transition: all 0,5s ease-in-out;
+    height: 3rem;
+    padding: 1%;
+    transition: all 0.5s ease-in-out;
+    a {
+        color: $primary;
+        text-decoration: none;
+    }
 }
 .connect-btn:hover {
     border: 2px solid $white;

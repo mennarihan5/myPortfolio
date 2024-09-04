@@ -14,10 +14,12 @@ body {
 
 .hero-container {
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 7% auto;
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 3%;
   width: 80%;
   flex-wrap: wrap;
 }
@@ -71,13 +73,18 @@ body {
 .btns-wrapper {
   display: flex;
   align-items: center;
+  gap: 5%;
+  margin-top: 5%;
 }
 
 .connect-btn, .resume-btn {
-  padding: 1.5% 1%;
-  margin-right: 5%;
-  margin-top: 2%;
-  transition: all 0, 5s ease-in-out;
+  height: 3rem;
+  padding: 1%;
+  transition: all 0.5s ease-in-out;
+}
+.connect-btn a, .resume-btn a {
+  color: #161513;
+  text-decoration: none;
 }
 
 .connect-btn:hover {

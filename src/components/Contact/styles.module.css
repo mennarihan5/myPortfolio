@@ -10,4 +10,70 @@ body {
   background-color: #161513;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+}
+
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  margin-top: 10%;
+}
+
+.contact-info {
+  width: 30rem;
+  margin-top: -17%;
+}
+
+.contact-title {
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+  color: #e398f9;
+}
+
+.contact-text {
+  font-size: 1.25rem;
+  margin-bottom: 10%;
+  line-height: 1.5;
+}
+
+.contact-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: 0;
+  align-items: center;
+  width: 60%;
+  gap: 5%;
+  margin-bottom: 3%;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.contact-data .icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.contact-data a {
+  text-decoration: none;
+  color: #fff;
+}
+.contact-data .data {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  width: 40rem;
 }/*# sourceMappingURL=styles.module.css.map */

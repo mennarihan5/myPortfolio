@@ -2,10 +2,12 @@
 
 .projects-container {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 .title {
-
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5%;
 }
 .projects-wrapper {
     @include dFlex (row, space-between, center);
@@ -13,11 +15,17 @@
 }
 .project {
     width: 30%;
+    height: 12.5rem;
     cursor: pointer;
+    margin-bottom: 3%;
     img {
         width: 100%;
-    }
-    p {
-
+        height: 100%;
+        border-radius: 8px;
+        transition: all 0.5s ease-in;
+        &:hover {
+            border: 2px solid $pink2;
+            transform: scale(1.07);
+        }
     }
 }

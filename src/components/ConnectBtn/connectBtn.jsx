@@ -4,9 +4,9 @@ const ConnectBtn = (props) => {
   const {children, className} = props;
 
   return (
-    <button className={`${styles['connect-btn']} ${className}`}>
+      <button className={`${styles['connect-btn']} ${className}`}>
         {children}
-    </button>
+      </button>
   )
 }
 

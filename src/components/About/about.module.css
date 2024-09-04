@@ -30,11 +30,12 @@ body {
 
 .skills {
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin: 5% auto;
+  margin: auto;
+  margin-top: 5%;
   gap: 3%;
 }
 .skills img {

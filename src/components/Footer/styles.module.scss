@@ -1,0 +1,27 @@
+@import '../../styles/styles.scss';
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1%;
+}
+.logo {
+    width: 100%;
+    border-bottom: 1px solid $white;
+    margin-bottom: 1%;
+}
+.footer-wrapper {
+    @include dFlex (row, space-between, center);
+    gap: 20px;
+    p {
+
+    }
+    .footer-menu {
+        @include dFlex (row, space-between, center);
+        width: 35%;
+        .links {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}

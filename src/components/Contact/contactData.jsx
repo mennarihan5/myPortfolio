@@ -6,12 +6,14 @@ const contactData = [
     {
         id: 1,
         icon: <IoIosMail />,
-        data: 'menna1986@live.com'
+        data: 'menna1986@live.com',
+        link: 'mailto:menna1986@gmail.com'
     },
     {
         id: 2,
         icon: <FaPhoneVolume />,
-        data: '01008878175'
+        data: +201008878175,
+        link: 'tel:+201008878175'
     },
     {
         id: 3,

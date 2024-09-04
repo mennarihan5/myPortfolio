@@ -12,6 +12,9 @@
     $white: #fff;
     $pink: #e398f9;
     $pink2: #d085ee;
+    $lightGrey: #b1b1b1;
+    $grey: #a0a0a0;
+    $darkGrey: #32323c;
 
 // GLOBAL
 body {
@@ -23,7 +26,7 @@ body {
 // VARIABLES
 @mixin dFlex ($direction, $justify, $align){
     display: flex;
-    direction: $direction;
+    flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }

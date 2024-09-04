@@ -26,11 +26,11 @@ const ContactForm = () => {
   return (
     <form className={styles.form} ref={form} onSubmit={sendEmail}>
       <label className={styles.name}>Name</label>
-      <input className={styles['name-input']} type="text" name="from_name" />
+      <input className={styles['name-input']} type="text" name="from_name" placeholder="Enter your name" />
       <label className={styles.email}>Email</label>
-      <input className={styles['email-input']} type="email" name="user_email" />
+      <input className={styles['email-input']} type="email" name="user_email" placeholder="Enter your email" />
       <label className={styles.msg}>Message</label>
-      <textarea className={styles.text} name="message" />
+      <textarea className={styles.text} name="message" placeholder="Enter your message" />
       <input className={styles['submit-btn']} type="submit" value="Send" />
     </form>
   );

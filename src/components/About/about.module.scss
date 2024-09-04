@@ -3,7 +3,6 @@
 .about-container {
     width: 80%;
     margin: 0 auto;
-
 }
 .title {
     font-size: 1.8rem;
@@ -17,7 +16,8 @@
 .skills {
     @include dFlex(row, space-around, center);
     width: 100%;
-    margin: 5% auto;
+    margin: auto;
+    margin-top: 5%;
     gap: 3%;
     img {
         width: 8%;

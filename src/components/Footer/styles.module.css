@@ -12,38 +12,33 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.projects-container {
+.footer-container {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
+  padding-bottom: 1%;
 }
 
-.title {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 5%;
+.logo {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1%;
 }
 
-.projects-wrapper {
+.footer-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 20px;
 }
-
-.project {
-  width: 30%;
-  height: 12.5rem;
-  cursor: pointer;
-  margin-bottom: 3%;
+.footer-wrapper .footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
 }
-.project img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  transition: all 0.5s ease-in;
-}
-.project img:hover {
-  border: 2px solid #d085ee;
-  transform: scale(1.07);
+.footer-wrapper .footer-menu .links {
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.module.css.map */

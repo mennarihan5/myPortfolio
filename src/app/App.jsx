@@ -5,18 +5,33 @@ import Services from '../components/Services/services';
 import Projects from '../components/Projects/projects';
 import Footer from '../components/Footer/footer';
 import Contact from "../components/Contact/contact";
+import PrivacyPolicy from '../pages/Privacy/privacy';
+import TermsOfService from '../pages/Terms/terms';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import styles from './styles.module.scss';
+import ScrollToTop from "../components/ScrollToTop/scrollToTop";
+
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={
+          <div>
+            <Header />
+            <Hero />
+            <section className={styles.section} id="about"><About /></section>
+            <section className={styles.section} id="services"><Services /></section>
+            <section className={styles.section} id="projects"><Projects /></section>
+            <section className={styles.section} id="contact"><Contact /></section>
+            <Footer />
+          </div>
+        } />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+      </Routes>
+    </Router>
   )
 }
 

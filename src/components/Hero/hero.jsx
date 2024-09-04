@@ -1,6 +1,7 @@
 import styles from './styles.module.scss';
 import ConnectBtn from '../ConnectBtn/connectBtn';
 import heroImg from '../../assets/gradient-homepage-illustration.png';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
@@ -16,11 +17,15 @@ const Hero = () => {
             </p>
           </div>
           <div className={styles['btns-wrapper']}>
-              <ConnectBtn className={styles['connect-btn']}>
-                Connect Now!
-              </ConnectBtn>
+              <Link to='contact' smooth={true} duration={500}>
+                <ConnectBtn className={styles['connect-btn']}>
+                  Connect Now!
+                </ConnectBtn>
+              </Link> 
               <ConnectBtn className={styles['resume-btn']}>
-                My resume
+                <a href="../../../public/Resume-Menna-Rihan.pdf" target="_blank" rel="noopener noreferrer" className={styles['resume-btn']}>
+                  My Resume
+                </a>
               </ConnectBtn>
           </div>
         </div>

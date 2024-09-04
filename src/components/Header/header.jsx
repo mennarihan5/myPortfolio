@@ -2,6 +2,7 @@ import Logo from '../Logo/logo';
 import Navbar from '../Navbar/navbar';
 import ConnectBtn from '../ConnectBtn/connectBtn';
 import styles from './styles.module.scss';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -13,9 +14,11 @@ const Header = () => {
           <Navbar />
         </div>
         <div className={styles['connect-btn-wrapper']}>
+        <Link to='contact' smooth={true} duration={500}>
           <ConnectBtn>
             Connect Now! 
-          </ConnectBtn>  
+          </ConnectBtn> 
+        </Link> 
         </div>
     </div>
   )

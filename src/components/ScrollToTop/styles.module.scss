@@ -1,0 +1,18 @@
+@import '../../styles/styles.scss';
+
+.scrollToTopButton {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: $white;
+    color: $primary;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5% 0.7%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $lightGrey;
+    }
+  }

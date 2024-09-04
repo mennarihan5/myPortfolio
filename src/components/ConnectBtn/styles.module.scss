@@ -1,11 +1,12 @@
 @import '../../styles/styles.scss';
 
 .connect-btn {
+    height: 3rem;
     width: 13rem;
     cursor: pointer;
     font-size: 1.25rem;
     border-radius: 3rem;
-    padding: 4% 1%;
+    padding: 1%;
     border: none;
     font-weight: 600;
     color: $primary;

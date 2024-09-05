@@ -7,8 +7,8 @@
 
 body {
   height: 100vh;
-  background-color: #161513;
-  color: #fff;
+  background-color: #fff;
+  color: #161513;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -62,13 +62,6 @@ body {
 .img-wrapper img {
   width: 100%;
 }
-.img-wrapper p {
-  text-align: center;
-  margin-top: -17%;
-  margin-left: 10%;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
 
 .btns-wrapper {
   display: flex;
@@ -83,10 +76,6 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .connect-btn a, .resume-btn a {
-  color: #161513;
+  color: #fff;
   text-decoration: none;
-}
-
-.connect-btn:hover {
-  border: 2px solid #fff;
 }/*# sourceMappingURL=styles.module.css.map */

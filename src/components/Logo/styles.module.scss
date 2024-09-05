@@ -14,7 +14,7 @@
         transform: translateX(-50%) scaleX(0);
         transform-origin: center;
         transition: all 0.8s ease-in-out;
-        background-image: linear-gradient(to right top, #ac4efa, #c267f9, #d47ff9, #e398f9, #f0b1fb, #f7b3f2, #fcb6ea, #ffbae3, #ffa9c5, #ff9e95, #ffa15b, #feb000);
+        background-color: $primary;
     }
     &:hover::after {
         transform: translateX(-50%) scaleX(1);

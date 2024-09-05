@@ -3,14 +3,19 @@
 .navbar-wrapper {
     width: 28rem;
 }
+.hamburger {
+    display: none;
+}
 .navbar {
     @include dFlex(row, center, center);
     gap: 5%;
     list-style: none;
 }
 .navbar li {
+    color: $primary;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: clamp(0.8rem, 3vw, 1.25rem);
+    font-weight: 500;
     letter-spacing: 1.5px;
     padding: 2% 0;
     position: relative;
@@ -25,9 +30,33 @@
         transform: translateX(-50%) scaleX(0);
         transform-origin: center;
         transition: all 0.8s ease-in-out;
-        background-image: linear-gradient(to right top, #ac4efa, #c267f9, #d47ff9, #e398f9, #f0b1fb, #f7b3f2, #fcb6ea, #ffbae3, #ffa9c5, #ff9e95, #ffa15b, #feb000);
+        background-color: $primary;
     }
     &:hover::after {
         transform: translateX(-50%) scaleX(1);
+    }
+}
+
+@media (max-width: 992px) {
+    .hamburger {
+        display: block;
+    }
+    .navbar {
+        position: fixed;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        top: 0;
+        right: 0;
+        padding: 5% 0;
+        width: 30%;
+        height: 100vh;
+        background-color: $primary;
+        color: $primary;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in;
+    }
+    .navbar-open {
+        transform: translateX(0);
     }
 }

@@ -39,14 +39,6 @@
     img {
         width: 100%;
     }
-    p {
-        text-align: center;
-        margin-top: -17%;
-        margin-left: 10%;
-        font-weight: 600;
-        letter-spacing: 0.8px;
-    }
-
 }
 
 .btns-wrapper {
@@ -60,10 +52,8 @@
     padding: 1%;
     transition: all 0.5s ease-in-out;
     a {
-        color: $primary;
+        color: $white;
         text-decoration: none;
     }
 }
-.connect-btn:hover {
-    border: 2px solid $white;
-}
+

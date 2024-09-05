@@ -13,15 +13,17 @@
 .footer-wrapper {
     @include dFlex (row, space-between, center);
     gap: 20px;
-    p {
-
-    }
     .footer-menu {
         @include dFlex (row, space-between, center);
         width: 35%;
         .links {
-            color: $white;
+            color: $primary;
+            font-weight: 500;
             text-decoration: none;
+        }
+        .projects-link {
+            cursor: pointer;
+            font-weight: 500;
         }
     }
 }

@@ -22,10 +22,12 @@
 }
 .title {
     font-size: 2.5rem;
+    font-size: clamp(1.9rem, 3vw, 2.5rem);
     margin-bottom: 3%;
 }
 .subtitle {
     font-size: 1.25rem;
+    font-size: clamp(0.9rem, 3vw, 1.25rem);
     letter-spacing: 0.3px;
     line-height: 2rem;
     margin-bottom: 3%;
@@ -40,7 +42,6 @@
         width: 100%;
     }
 }
-
 .btns-wrapper {
    display: flex;
    align-items: center;
@@ -48,12 +49,28 @@
    margin-top: 5%;
 }
 .connect-btn, .resume-btn {
-    height: 3rem;
-    padding: 1%;
+    display: inline-block; 
     transition: all 0.5s ease-in-out;
     a {
         color: $white;
         text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
+}
+
+@media (max-width: 992px) {
+    .img-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+    .btns-wrapper {
+        margin-bottom: 8%;
+        justify-content: center;
+    }
+   .left-side {
+        text-align: center;
+   }
 }
 

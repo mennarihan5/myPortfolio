@@ -4,11 +4,13 @@
     @include dFlex(row, space-between, center);
     max-width: 80%;
     margin: 2% auto;
+    // * {
+    //     border: 1px solid red;
+    // }
 }
 
-@media (max-width: 992px) {
-    .header-container {
-        flex-wrap: wrap;
+@media (max-width: 1200px) {
+    .btn {
+        display: none;
     }
-
 }

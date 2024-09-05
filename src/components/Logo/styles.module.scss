@@ -2,6 +2,7 @@
 
 .logo-wrapper {
     width: 8rem;
+    width: clamp(7rem, 3vw, 8rem);
     position: relative;
     &::after {
         content: '';

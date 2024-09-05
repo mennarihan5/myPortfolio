@@ -15,7 +15,7 @@ const Header = () => {
         </div>
         <div className={styles['connect-btn-wrapper']}>
         <Link to='contact' smooth={true} duration={500}>
-          <ConnectBtn>
+          <ConnectBtn className={styles.btn}>
             Connect Now! 
           </ConnectBtn> 
         </Link> 

@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import logo from '../../assets/rihanLogo.png';
+import logo from '../../assets/Rihan logo-transparent-NoTrademark.png';
 
 const Logo = () => {
   return (

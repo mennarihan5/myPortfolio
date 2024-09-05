@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 import ConnectBtn from '../ConnectBtn/connectBtn';
-import heroImg from '../../assets/gradient-homepage-illustration.png';
+import heroImg from '../../assets/content-structure-concept-illustration.png';
 import { Link } from 'react-scroll';
 
 const Hero = () => {
@@ -32,7 +32,6 @@ const Hero = () => {
         <div className={styles['right-side']}>
           <div className={styles['img-wrapper']}>
             <img src={heroImg} alt="Hero" />
-            <p>We're creating something amazing!</p>
           </div>
         </div>
     </div>

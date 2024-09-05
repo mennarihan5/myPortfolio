@@ -7,8 +7,8 @@
 
 body {
   height: 100vh;
-  background-color: #161513;
-  color: #fff;
+  background-color: #fff;
+  color: #161513;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -22,11 +22,11 @@ body {
   border: none;
   font-weight: 600;
   color: #161513;
-  background-image: linear-gradient(to right top, #ac4efa, #c267f9, #d47ff9, #e398f9, #f0b1fb, #f7b3f2, #fcb6ea, #ffbae3, #ffa9c5, #ff9e95, #ffa15b, #feb000);
+  background-color: #161513;
+  color: #fff;
   transition: all 0.5s ease-in-out;
   font-family: "Montserrat", sans-serif;
 }
 .connect-btn:hover {
   transform: scale(1.05);
-  border: 2px solid #e398f9;
 }/*# sourceMappingURL=styles.module.css.map */

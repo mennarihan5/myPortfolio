@@ -7,8 +7,8 @@
 
 body {
   height: 100vh;
-  background-color: #161513;
-  color: #fff;
+  background-color: #fff;
+  color: #161513;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -44,6 +44,6 @@ body {
   transition: all 0.5s ease-in;
 }
 .project img:hover {
-  border: 2px solid #d085ee;
+  border: 3px solid #161513;
   transform: scale(1.07);
 }/*# sourceMappingURL=styles.module.css.map */

@@ -14,7 +14,7 @@ const Footer = () => {
         <div className={styles['footer-menu']}>
           <RouterLink to='terms' className={styles.links}>Term of Services</RouterLink>
           <RouterLink to ='/privacy' className={styles.links}>Privacy Policy</RouterLink>
-          <ScrollLink to='/projects' className={styles.links} smooth={true} duration={500}>
+          <ScrollLink to='projects' className={styles['projects-link']} smooth={true} duration={500}>
             My Projects
           </ScrollLink>
         </div>

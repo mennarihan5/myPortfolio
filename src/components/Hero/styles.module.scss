@@ -22,12 +22,12 @@
 }
 .title {
     font-size: 2.5rem;
-    font-size: clamp(1.9rem, 3vw, 2.5rem);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin-bottom: 3%;
 }
 .subtitle {
     font-size: 1.25rem;
-    font-size: clamp(0.9rem, 3vw, 1.25rem);
+    font-size: clamp(0.6rem, 3vw, 1.25rem);
     letter-spacing: 0.3px;
     line-height: 2rem;
     margin-bottom: 3%;
@@ -60,7 +60,11 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+    .hero-container {
+        width: 95%;
+        z-index: -1;
+    }
     .img-wrapper {
         width: 70%;
         margin: auto;
@@ -69,8 +73,21 @@
         margin-bottom: 8%;
         justify-content: center;
     }
+    .connect-btn, .resume-btn {
+        width: 10rem;
+        font-size: 1rem;
+    }
    .left-side {
         text-align: center;
    }
+   .subtitle {
+    letter-spacing: normal;
+   }
+}
+@media (max-width: 768px) {
+    .connect-btn, .resume-btn {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
 }
 

@@ -7,22 +7,28 @@
 
 body {
   height: 100vh;
-  background-color: #161513;
-  color: #fff;
+  background-color: #fff;
+  color: #161513;
   font-family: "Montserrat", sans-serif;
 }
 
 .about-container {
   width: 80%;
   margin: 0 auto;
+  color: #161513;
+  text-align: center;
+  color: #161513;
 }
 
 .title {
   font-size: 1.8rem;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
   margin-bottom: 2%;
 }
 
 .text {
+  font-size: 1rem;
+  font-size: clamp(0.3rem, 3vw, 1rem);
   font-weight: 500;
   letter-spacing: 0.3px;
   line-height: 1.5rem;
@@ -39,10 +45,31 @@ body {
   gap: 3%;
 }
 .skills img {
-  width: 8%;
+  width: 10rem;
+  width: clamp(5rem, 3vw, 10rem);
   cursor: pointer;
   transition: transform 0.3s ease-out;
 }
 .skills img:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    width: 95%;
+  }
+  .skills {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+  .skills img {
+    width: 6rem;
+    margin-bottom: 7%;
+  }
+}
+@media (max-width: 768px) {
+  .skills img {
+    width: 3rem;
+    margin-bottom: 7%;
+  }
 }/*# sourceMappingURL=about.module.css.map */

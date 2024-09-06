@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className={styles['navbar-wrapper']}>
         <div className={styles.hamburger} onClick={handleToggle}>
-          {isOpen ? <IoCloseSharp /> : <GiHamburgerMenu />}
+          {isOpen ? <IoCloseSharp className={styles.close} /> : <GiHamburgerMenu />}
         </div>
         <ul className={`${styles.navbar} ${isOpen ? styles['navbar-open'] : ''}`}>
           <li>

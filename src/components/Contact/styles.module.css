@@ -16,6 +16,7 @@ body {
   width: 80%;
   margin: 0 auto;
   height: auto;
+  color: #161513;
 }
 
 .title {
@@ -40,12 +41,14 @@ body {
 
 .contact-title {
   font-size: 1.8rem;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
   margin-bottom: 5%;
   color: #161513;
 }
 
 .contact-text {
   font-size: 1.25rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   margin-bottom: 10%;
   line-height: 1.5;
 }
@@ -72,8 +75,29 @@ body {
 .contact-data .data {
   text-align: left;
   font-size: 1.1rem;
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
 }
 
 .contact-form {
   width: 40rem;
+}
+
+@media (max-width: 1200px) {
+  .contact-container {
+    width: 95%;
+    text-align: center;
+  }
+  .contact-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .title {
+    display: none;
+  }
+  .contact-title {
+    margin-top: 10%;
+  }
+  .contact-data {
+    margin: auto;
+  }
 }/*# sourceMappingURL=styles.module.css.map */

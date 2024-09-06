@@ -11,19 +11,22 @@
 }
 .services-wrapper {
     @include dFlex (row, space-between, center)
-
 }
 .service {
     @include dFlex (row, space-between, center);
     gap: 4%;
     font-size: 1.25rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
     font-weight: 600;
+    text-wrap: nowrap;
     padding: 5%;
     border: 3px solid $primary;
     color: $primary;
     border-radius: 8px;
     width: 20rem;
+    width: clamp(17rem, 3vw, 20rem);
     height: 15rem;
+    height: clamp(12rem, 3vw, 15rem);
     text-align: center;
     @include dFlex (column, center, center);
     cursor: pointer;
@@ -34,5 +37,20 @@
     svg {
         width: 5rem;
         fill: $primary;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-container {
+        width: 95%;
+    }
+    .services-wrapper {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        gap: 3%;
+    }
+    .service {
+        margin-bottom: 5%;
     }
 }

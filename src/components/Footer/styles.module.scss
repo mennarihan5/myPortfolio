@@ -19,11 +19,43 @@
         .links {
             color: $primary;
             font-weight: 500;
+            font-size: 1rem;
+            font-size: clamp(0.3rem, 3vw, 1rem);
             text-decoration: none;
+            text-wrap: nowrap;
         }
         .projects-link {
             cursor: pointer;
             font-weight: 500;
+            font-size: 1rem;
+            font-size: clamp(0.3rem, 3vw, 1rem);
+            text-wrap: nowrap;
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .footer-container {
+        width: 95%;
+    }
+    .logo {
+        margin: auto;
+        width: 15%;
+        margin-bottom: 3%;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 6%;
+        .footer-menu {
+            width: 60%;
+            margin-top: 3%;
+        }
+    }
+}
+// @media (max-width: 480px) {
+//     .footer-menu {
+//         .links {
+//             font-size: 0.5rem;
+//         }
+//     }
+// }

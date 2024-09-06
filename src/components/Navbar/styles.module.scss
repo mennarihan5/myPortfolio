@@ -45,6 +45,10 @@
         top: 4%;
         font-size: 1.8rem;
     }
+    .close {
+        color: red;
+        z-index: 1000;
+    }
     .navbar-wrapper {
         width: 19rem;
     }
@@ -59,9 +63,12 @@
         width: 30%;
         height: 100vh;
         background-color: $primary;
-        color: $primary;
         transform: translateX(100%);
         transition: all 0.5s ease-in;
+        z-index: 100;
+        a {
+            color: $white;
+        }
     }
     .navbar-open {
         transform: translateX(0);
@@ -70,6 +77,15 @@
 @media (max-width: 768px) {
     .hamburger {
         top: 4%;
+        right: 3.5%;
         font-size: 1.5rem;
+    }
+    .navbar {
+        width: 100%;
+        padding: 5% 60%;
+    }
+    .close {
+        color: red;
+        z-index: 100;
     }
 }

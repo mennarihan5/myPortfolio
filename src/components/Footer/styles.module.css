@@ -41,9 +41,34 @@ body {
 .footer-wrapper .footer-menu .links {
   color: #161513;
   font-weight: 500;
+  font-size: 1rem;
+  font-size: clamp(0.3rem, 3vw, 1rem);
   text-decoration: none;
+  text-wrap: nowrap;
 }
 .footer-wrapper .footer-menu .projects-link {
   cursor: pointer;
   font-weight: 500;
+  font-size: 1rem;
+  font-size: clamp(0.3rem, 3vw, 1rem);
+  text-wrap: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .footer-container {
+    width: 95%;
+  }
+  .logo {
+    margin: auto;
+    width: 15%;
+    margin-bottom: 3%;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 6%;
+  }
+  .footer-wrapper .footer-menu {
+    width: 60%;
+    margin-top: 3%;
+  }
 }/*# sourceMappingURL=styles.module.css.map */

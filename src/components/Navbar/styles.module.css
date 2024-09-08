@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -65,8 +64,12 @@ body {
     font-size: 1.8rem;
   }
   .close {
-    color: red;
-    z-index: 1000;
+    color: #fff;
+    z-index: 100;
+    position: fixed;
+    top: 1%;
+    right: 25%;
+    cursor: pointer;
   }
   .navbar-wrapper {
     width: 19rem;
@@ -84,7 +87,6 @@ body {
     background-color: #161513;
     transform: translateX(100%);
     transition: all 0.5s ease-in;
-    z-index: 100;
   }
   .navbar a {
     color: #fff;
@@ -98,13 +100,19 @@ body {
     top: 4%;
     right: 3.5%;
     font-size: 1.5rem;
+    display: block;
+    position: absolute;
+    z-index: 150;
   }
   .navbar {
     width: 100%;
-    padding: 5% 60%;
+    padding: 5% 0;
+  }
+  .navbar-open {
+    transform: translate(0);
   }
   .close {
-    color: red;
-    z-index: 100;
+    right: 90%;
+    color: #fff;
   }
 }/*# sourceMappingURL=styles.module.css.map */

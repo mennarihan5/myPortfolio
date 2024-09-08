@@ -46,8 +46,12 @@
         font-size: 1.8rem;
     }
     .close {
-        color: red;
-        z-index: 1000;
+        color: $white;
+        z-index: 100;
+        position: fixed;
+        top: 1%;
+        right: 25%;
+        cursor: pointer;
     }
     .navbar-wrapper {
         width: 19rem;
@@ -65,7 +69,6 @@
         background-color: $primary;
         transform: translateX(100%);
         transition: all 0.5s ease-in;
-        z-index: 100;
         a {
             color: $white;
         }
@@ -79,13 +82,19 @@
         top: 4%;
         right: 3.5%;
         font-size: 1.5rem;
+        display: block;
+        position: absolute;
+        z-index: 150;
     }
     .navbar {
         width: 100%;
-        padding: 5% 60%;
+        padding: 5% 0;
+    }
+    .navbar-open {
+        transform: translate(0);
     }
     .close {
-        color: red;
-        z-index: 100;
+        right: 90%;
+        color: $white;
     }
 }

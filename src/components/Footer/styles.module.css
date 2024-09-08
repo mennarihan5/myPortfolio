@@ -31,6 +31,10 @@ body {
   align-items: center;
   gap: 20px;
 }
+.footer-wrapper p {
+  font-size: 1rem;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
 .footer-wrapper .footer-menu {
   display: flex;
   flex-direction: row;
@@ -60,7 +64,7 @@ body {
   }
   .logo {
     margin: auto;
-    width: 15%;
+    width: 10%;
     margin-bottom: 3%;
   }
   .footer-wrapper {
@@ -68,7 +72,23 @@ body {
     gap: 6%;
   }
   .footer-wrapper .footer-menu {
-    width: 60%;
+    width: 50%;
     margin-top: 3%;
+    gap: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    margin: auto;
+    width: 25%;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 6%;
+  }
+  .footer-wrapper .footer-menu {
+    width: 70%;
+    margin-top: 3%;
+    gap: 5%;
   }
 }/*# sourceMappingURL=styles.module.css.map */

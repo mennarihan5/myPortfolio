@@ -20,11 +20,21 @@ body {
   color: #fff;
   border: none;
   border-radius: 50%;
-  padding: 0.5% 0.7%;
+  width: 3rem;
+  width: clamp 2.5rem, 3vw, 3rem;
+  height: 3rem;
+  height: clamp 2.5rem, 3vw, 3rem;
   cursor: pointer;
   font-size: 1.5rem;
   transition: background-color 0.3s ease;
 }
 .scrollToTopButton:hover {
-  background-color: #b1b1b1;
+  background-color: #dadada;
+}
+
+@media (max-width: 1200px) {
+  .scrollToTopButton {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }/*# sourceMappingURL=styles.module.css.map */

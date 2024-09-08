@@ -18,15 +18,15 @@ const App = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={
-          <div>
+          <main>
             <Header />
             <Hero />
-            <section className={styles.section} id="about"><About /></section>
-            <section className={styles.section} id="services"><Services /></section>
-            <section className={styles.section} id="projects"><Projects /></section>
-            <section className={styles.section} id="contact"><Contact /></section>
+              <section className={styles.section} id="about"><About /></section>
+              <section className={styles.section} id="services"><Services /></section>
+              <section className={styles.section} id="projects"><Projects /></section>
+              <section className={styles.section} id="contact"><Contact /></section>
             <Footer />
-          </div>
+          </main>
         } />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />

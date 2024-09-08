@@ -9,7 +9,8 @@ const Hero = () => {
         <div className={styles['left-side']}>
           <div className={styles['text-wrapper']}>
             <h2 className={styles.title}>
-              <span className={styles.name}>I'm Menna Rihan,</span> frontend developer.
+              <span className={styles.name}> Menna Rihan,</span> <br />
+             frontend developer.
             </h2>
             <p className={styles.subtitle}>
               I’m a Front-End Web Developer with expertise in crafting responsive, pixel-perfect interfaces that prioritize a seamless and intuitive user experience. 
@@ -29,11 +30,11 @@ const Hero = () => {
               </ConnectBtn>
           </div>
         </div>
-        <div className={styles['right-side']}>
+        {/* <div className={styles['right-side']}>
           <div className={styles['img-wrapper']}>
             <img src={heroImg} alt="Hero" />
           </div>
-        </div>
+        </div> */}
     </section>
   )
 }

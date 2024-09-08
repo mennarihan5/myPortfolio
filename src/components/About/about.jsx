@@ -10,7 +10,7 @@ import html from '../../assets/html-5-logo-svgrepo-com.svg';
 
 const About = () => {
   return (
-    <div className={styles['about-container']}>
+    <section className={styles['about-container']}>
       <h2 className={styles.title}>About me</h2>
       <div className={styles.text}>
         I am a motivated Frontend Developer with a strong foundation in web development. Although I am early in my career, I have already gained valuable experience by working on several projects that have helped me develop a solid understanding of frontend technologies.
@@ -28,7 +28,7 @@ const About = () => {
         <img src={css} alt='CSS Logo' />
         <img src={html} alt='html Logo' />
       </div>
-    </div>
+    </section>
   )
 }
 

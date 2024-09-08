@@ -6,7 +6,7 @@ import Consult from '../../assets/chat-talk-svgrepo-com.svg?react';
 
 const Services = () => {
   return (
-    <div className={styles['services-container']}>
+    <section className={styles['services-container']}>
       <h2 className={styles.title}>My Services</h2>
       <div className={styles['services-wrapper']}>
         <div className={styles.service}>
@@ -22,7 +22,7 @@ const Services = () => {
           <Consult className={styles.consult} />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

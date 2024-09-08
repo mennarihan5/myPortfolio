@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <div className={styles['hero-container']}>
+    <section className={styles['hero-container']}>
         <div className={styles['left-side']}>
           <div className={styles['text-wrapper']}>
             <h2 className={styles.title}>
@@ -34,7 +34,7 @@ const Hero = () => {
             <img src={heroImg} alt="Hero" />
           </div>
         </div>
-    </div>
+    </section>
   )
 }
 

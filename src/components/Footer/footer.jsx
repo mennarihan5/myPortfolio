@@ -5,11 +5,11 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Footer = () => {
   return (
-    <div className={styles['footer-container']}>
+    <footer className={styles['footer-container']}>
       <div className={styles.logo}>
         <Logo />
       </div>
-      <div className={styles['footer-wrapper']}>
+      <section className={styles['footer-wrapper']}>
         <p>© 2024 Menna Rihan. All rights reserved.</p>
         <div className={styles['footer-menu']}>
           <RouterLink to='terms' className={styles.links}>Term of Services</RouterLink>
@@ -18,8 +18,8 @@ const Footer = () => {
             My Projects
           </ScrollLink>
         </div>
-      </div>
-    </div>
+      </section>
+    </footer>
   )
 }
 

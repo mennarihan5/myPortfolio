@@ -3,7 +3,7 @@ import projectsData from './projectsData';
 
 const Projects = () => {
   return (
-    <div className={styles['projects-container']}>
+    <section className={styles['projects-container']}>
         <h2 className={styles.title}>My Projects</h2>
         <div className={styles['projects-wrapper']}>
             {
@@ -16,7 +16,7 @@ const Projects = () => {
                 ))
             }
         </div>
-    </div>
+    </section>
   )
 }
 

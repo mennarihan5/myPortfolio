@@ -28,7 +28,7 @@
     font-size: 9rem;
     font-family: "Rubik", serif;
     font-weight: 700;
-    background-image: linear-gradient(#fad23e, #fad23e);
+    background-image: linear-gradient($yellow, $yellow);
     background-size: 100% 1rem;
     background-repeat: no-repeat;
     background-position: 100% 0%;
@@ -71,6 +71,11 @@
         display: block;
         width: 100%;
         text-align: center;
+    }
+    &:hover {
+        a {
+            color: $yellow;
+        }
     }
 }
 

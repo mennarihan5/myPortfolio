@@ -99,6 +99,9 @@ body {
   width: 100%;
   text-align: center;
 }
+.connect-btn:hover a, .resume-btn:hover a {
+  color: #fad23e;
+}
 
 @media (max-width: 1200px) {
   .hero-container {

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -22,16 +24,13 @@ body {
   top: 90%;
   left: 50%;
   position: absolute;
-  width: 4.5rem;
+  width: 80%;
   height: 0.2rem;
   border-radius: 3rem;
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
   transition: all 0.8s ease-in-out;
   background-color: #161513;
-}
-.logo-wrapper:hover::after {
-  transform: translateX(-50%) scaleX(1);
 }
 
 .logo-wrapper img {

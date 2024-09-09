@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -36,12 +37,28 @@ body {
 .title {
   margin-bottom: 3%;
   text-align: left;
+  position: relative;
+}
+.title p {
+  font-size: 1.25rem;
+  font-size: clamp(0.6rem, 3vw, 1.25rem);
+  font-weight: 500;
 }
 
 .name {
-  font-size: 10rem;
-  font-family: "Abril Fatface", serif;
-  font-weight: 500;
+  font-size: 9rem;
+  font-family: "Rubik", serif;
+  font-weight: 700;
+  background-image: linear-gradient(#fad23e, #fad23e);
+  background-size: 100% 1rem;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.name:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
 }
 
 .subtitle {
@@ -88,9 +105,8 @@ body {
     width: 95%;
     z-index: -1;
   }
-  .img-wrapper {
-    width: 70%;
-    margin: auto;
+  .name {
+    font-size: 6rem;
   }
   .btns-wrapper {
     margin-bottom: 8%;
@@ -109,8 +125,7 @@ body {
 }
 @media (max-width: 768px) {
   .name {
-    font-size: 6rem;
-    text-align: left;
+    font-size: 3rem;
   }
   .connect-btn, .resume-btn {
     width: 8rem;

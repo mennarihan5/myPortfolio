@@ -69,6 +69,7 @@
         background-color: $primary;
         transform: translateX(100%);
         transition: all 0.5s ease-in;
+        z-index: 1;
         a {
             color: $white;
         }
